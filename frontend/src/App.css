@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8ff; /* เปลี่ยนพื้นหลังเป็นสีเข้ม */
+  color: rgb(12, 2, 2); /* ให้ข้อความดูชัดขึ้น */
+  font-family: 'Fuzzy Bubbles', sans-serif; /* ฟอนต์ที่ใช้ */
+}

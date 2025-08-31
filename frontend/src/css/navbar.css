@@ -1,0 +1,14 @@
+.background-navbar{
+    background-color: #ff9900;
+    padding: 15px;
+}
+
+.size-header{
+    display: flex;
+}
+
+.font-navbar{
+    font-size: 16px;
+    
+    color: white;
+}
