@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router } from "react-router-dom";
 import Cart from "./pages/cart";
-import Navbar from './functions/navbar';
+
 import './App.css'
 import React from 'react';
 
@@ -11,7 +11,7 @@ function App() {
     <>
       <React.StrictMode>
       <Router>
-        <Navbar/>
+
         <Cart />
       </Router>
     </React.StrictMode>

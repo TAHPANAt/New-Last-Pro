@@ -7,13 +7,10 @@ import(
 type Seller struct {
 	gorm.Model
 
-	Shopname		string		`json:"shopname"`
+	MemberID		uint			`json:"member_id"`
+	Member			*Member			`gorm:"foreignKey:MemberID" json:"member"`
 
-	Shopaddress		string		`json:"shopaddress"`
+	ShopAddressID	uint			`json:"shop_address_id"`
+	ShopAddress		*ShopAddress	`gorm:"foreignKey:ShopAddressID" json:"shop_address"`
 
-	MemberID		uint
-	Member			*Member
-
-	ProductID		uint
-	Product			*Product			
 }

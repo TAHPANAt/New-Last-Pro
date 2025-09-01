@@ -24,11 +24,31 @@ func ConnectionDB() {
 func SetupDatabase() {
 	// Migrate the schema
 	db.AutoMigrate(
+		&entity.ActivityLog{},
+		&entity.Admin{},
 		&entity.Cart{},
+		&entity.CartItem{},
+		&entity.CreateCode{},
+		&entity.DiscountCode{},
 		&entity.Gender{},
 		&entity.Member{},
+		&entity.MemberProfile{},
+		&entity.Order{},
+		&entity.OrderDiscount{},
+		&entity.OrderItem{},
+		&entity.Payment{},
+		&entity.PaymentMethod{},
 		&entity.Person{},
+		&entity.PostANewProduct{},
 		&entity.Product{},
+		&entity.ProductDiscount{},
+		&entity.ProductImage{},
+		&entity.ProductPostCategory{},
+		&entity.Report{},
+		&entity.ReportType{},
 		&entity.Seller{},
+		&entity.ShopAddress{},
+		&entity.ShopCategory{},
+		&entity.ShopProfile{},
 	)
 }

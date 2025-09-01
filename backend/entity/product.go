@@ -15,5 +15,7 @@ type Product struct {
 
 	Quantity			int			`json:"quantity"`
 
-	Sellers				[]Seller
+	SellerID			uint		`json:"seller_id"`
+	Seller				*Seller		`gorm:"foreignKey:SellerID" json:"seller"`
+
 }

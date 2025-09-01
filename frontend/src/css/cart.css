@@ -1,0 +1,19 @@
+.font-cart {
+    font-size: 16px;
+    display: flex;
+    padding: 0 10px;
+    color: black;
+}
+
+.background-cart{
+    background-color: #faf0e6;
+    padding: 15px;
+    display: flex;
+}
+
+.between-cart {
+    display: flex;
+    justify-content: space-between; /* ดันให้ไปอยู่คนละฝั่ง */
+    align-items: center;            /* จัดกึ่งกลางแนวตั้ง */
+    padding: 0 10px;                /* เพิ่มระยะขอบซ้าย-ขวา */
+}

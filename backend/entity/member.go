@@ -11,9 +11,7 @@ type Member struct {
 
 	Password		string		`json:"password"`
 
-	People			Person
+	PersonID		uint		`json:"person_id"`
+	Person			*Person		`gorm:"foreignKey:PersonID" json:"person"`  
 
-	Seller			Seller
-
-	Cart			Cart
 }

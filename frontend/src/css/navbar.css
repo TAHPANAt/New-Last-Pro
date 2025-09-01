@@ -3,12 +3,16 @@
     padding: 15px;
 }
 
-.size-header{
-    display: flex;
+.size-header {
+  display: flex;
+  justify-content: space-between; /* ดันให้ไปอยู่คนละฝั่ง */
+  align-items: center;            /* จัดกึ่งกลางแนวตั้ง */
+  padding: 0 10px;                /* เพิ่มระยะขอบซ้าย-ขวา */
 }
 
 .font-navbar{
     font-size: 16px;
-    
+    display: flex;
+    padding: 0 10px; 
     color: white;
 }

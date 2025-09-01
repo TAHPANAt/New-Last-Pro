@@ -5,13 +5,13 @@ import("gorm.io/gorm")
 type Person struct{
 	gorm.Model
 
-	Fristname		string		`json:"fristname"`
+	Firstname		string		`json:"firstname"`
 
 	Lastname		string		`json:"lastname"`
 
 	Email			string		`gorm:"uniqueIndex" json:"email"`
 
-	Age				int			`josn:"age"`
+	Age				int			`json:"age"`
 
 	Phone			string		`json:"phone"`
 
@@ -19,9 +19,7 @@ type Person struct{
 
 	Address			string		`json:"address"`
 
-	GenderID		uint
-	Gender			*Gender
+	GenderID		uint		`json:"gender_id"`
+	Gender			*Gender		`gorm:"foreignKey:GenderID" json:"gender"`
 
-	MemberID		uint
-	Member			*Member
 }
